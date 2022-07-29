@@ -1,0 +1,801 @@
+@@include("partials/main.html")
+
+  <head>
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    @@include("partials/head-css.html")
+  </head>
+
+  @@include("partials/body.html")
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        @@include("partials/menu.html")
+
+
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="main-content">
+        <div class="page-content">
+          <div class="container-fluid">
+
+            @@include("partials/page-title.html", {"pagetitle": "Superação", "title": "Simulador"})
+
+            <!-- start page content -->
+            <div class="row">
+              <p>
+                Selecione uma unidade para compararar resultados.
+              </p>
+            </div>
+
+            <div class="row">
+            <div class="col-6 mb-3">
+                <label class="col-md-2 col-form-label">Unidade:</label>
+                <select class="form-select" disabled>
+                  <option>Minha Unidade</option>
+                </select>
+            </div>
+            <div class="col-6 mb-3">
+              <table>
+                <td>SIMULADOR</td>
+                <td>SIMULADOR</td>
+              </table>
+              
+          </div>
+              
+               
+            </div>
+
+            <div class="row">
+                 <!-- COOPERATIVA DEFAULT -->
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="table-rep-plugin">
+                    <div
+                      class="table-responsive table-bordered mb-0"
+                      data-pattern="priority-columns"
+                    >
+                      <table id="tech-companies-1" class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Indicadores</th>
+                            <th data-priority="1">Classificação</th>
+                            <th data-priority="3">Carteira</th>
+                            <th data-priority="1">Per Capita</th>
+                            <th data-priority="3">Pontos</th>
+                            <th data-priority="3">Peso</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>CARTEIRA DE CRÉDITO PF PER CAPITA</th>
+                            <td>
+                              3
+                              <i
+                                class="fas fa-arrow-circle-down"
+                                style="color: #f46a6a"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais">11.223.188</td>
+                            <td >49</td>
+                            <td>120</td>
+                            <td class="peso">15</td>
+                          </tr>
+                          <tr>
+                            <th>CARTEIRA DE CRÉDITO PJ PER CAPITA</th>
+                            <td>
+                              9
+                              <i
+                                class="fas fa-arrow-circle-up"
+                                style="color: #34c38f"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais" >440.733</td>
+                            <td>25</td>
+                            <td>30</td>
+                            <td class="peso">15</td>
+                          </tr>
+                          <tr>
+                            <th>DAP + FUNDOS PF PER CAPITA</th>
+                            <td>
+                              6
+                              <i
+                                class="fas fa-arrow-circle-right"
+                                style="color: #f1b44c"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais">11.540.842</td>
+                            <td>41</td>
+                            <td>150</td>
+                            <td class="peso">30</td>
+                          </tr>
+                          <tr>
+                            <th>DAP + FUNDOS PJ PER CAPITA</th>
+                            <td>
+                              6
+                              <i
+                                class="fas fa-arrow-circle-right"
+                                style="color: #f1b44c"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais">1.597.774</td>
+                            <td>28</td>
+                            <td>150</td>
+                            <td class="peso">30</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                  <div class="table-rep-plugin">
+                    <div
+                      class="table-responsive table-sm table-bordered mb-0"
+                      data-pattern="priority-columns"
+                    >
+                      <table id="tech-companies-2" class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Indicadores</th>
+                            <th data-priority="1">Classificação</th>
+                            <th data-priority="3">Unicred</th>
+                            <th data-priority="3">PR</th>
+                            <th data-priority="1">%</th>
+                            <th data-priority="3">Pontos</th>
+                            <th data-priority="3">Peso</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>STRESS PF</th>
+                            <td>
+                              1
+                              <i
+                                class="fas fa-arrow-circle-up"
+                                style="color: #34c38f"
+                              ></i>
+                            </td>
+                            <td  class="valoresAtuais">7.780.812</td>
+                            <td>2.582.797</td>
+                            <td>75,08%</td>
+                            <td>100</td>
+                            <td class="peso">10</td>
+                          </tr>
+                          <tr>
+                            <th>STRESS PJ</th>
+                            <td>
+                              4
+                              <i
+                                class="fas fa-arrow-circle-right"
+                                style="color: #f1b44c"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais">417.349</td>
+                            <td>573.061</td>
+                            <td>42,14%</td>
+                            <td>70</td>
+                            <td class="peso">10</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                  <div class="table-rep-plugin">
+                    <div
+                      class="table-responsive table-bordered mb-0"
+                      data-pattern="priority-columns"
+                    >
+                      <table id="tech-companies-3" class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Indicadores</th>
+                            <th data-priority="1">Classificação</th>
+                            <th data-priority="3">Rec. Prod/Ser</th>
+                            <th data-priority="3">Rec. Total</th>
+                            <th data-priority="1">%</th>
+                            <th data-priority="3">Pontos</th>
+                            <th data-priority="3">Peso</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>REC. DE PROD E SERV / REC. TOTAL</th>
+                            <td>
+                              2
+                              <i
+                                class="fas fa-arrow-circle-up"
+                                style="color: #34c38f"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais">130.079</td>
+                            <td>1.632.659</td>
+                            <td>8,0%</td>
+                            <td>225</td>
+                            <td class="peso">25</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                  <div class="table-rep-plugin">
+                    <div
+                      class="table-responsive table-bordered mb-0"
+                      data-pattern="priority-columns"
+                    >
+                      <table id="tech-companies-3" class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Indicadores</th>
+                            <th data-priority="1">Classificação</th>
+                            <th data-priority="3">Média 2021</th>
+                            <th data-priority="3">Média 2022</th>
+                            <th data-priority="1">% / Vol.</th>
+                            <th data-priority="3">Pontos</th>
+                            <th data-priority="3">Peso</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>RESULTADO TOTAL %</th>
+                            <td>
+                              9
+                              <i
+                                class="fas fa-arrow-circle-down"
+                                style="color: #f46a6a"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais" >73.980</td>
+                            <td>41.361</td>
+                            <td>-44,09%</td>
+                            <td>0</td>
+                            <td class="peso">20</td>
+                          </tr>
+                          <tr>
+                            <th>RESULTADO TOTAL VOL.</th>
+                            <td>
+                              9
+                              <i
+                                class="fas fa-arrow-circle-down"
+                                style="color: #f46a6a"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais">73.980</td>
+                            <td>41.361</td>
+                            <td>32.620</td>
+                            <td>0</td>
+                            <td class="peso">15</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                  <div class="table-rep-plugin">
+                    <div
+                      class="table-responsive table-bordered mb-0"
+                      data-pattern="priority-columns"
+                    >
+                      <table id="tech-companies-3" class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Indicadores</th>
+                            <th data-priority="1">Classificação</th>
+                            <th data-priority="3">Cooperados</th>
+                            <th data-priority="3">Fidelizados</th>
+                            <th data-priority="1">%</th>
+                            <th data-priority="3">Pontos</th>
+                            <th data-priority="3">Peso</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>FIDELIZAÇÃO PF</th>
+                            <td>
+                              2
+                              <i
+                                class="fas fa-arrow-circle-right"
+                                style="color: #f1b44c"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais">279</td>
+                            <td>148</td>
+                            <td>53%</td>
+                            <td>270</td>
+                            <td class="peso">30</td>
+                          </tr>
+                          <tr>
+                            <th>FIDELIZAÇÃO PJ</th>
+                            <td>
+                              5
+                              <i
+                                class="fas fa-arrow-circle-up"
+                                style="color: #34c38f"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais">56</td>
+                            <td>18</td>
+                            <td>32%</td>
+                            <td>180</td>
+                            <td class="peso">30</td>
+                          </tr>
+                          <tr>
+                            <th>CARTÃO DE CRÉDITO FIDELIZAÇÃO</th>
+                            <td>
+                              1
+                              <i
+                                class="fas fa-arrow-circle-right"
+                                style="color: #f1b44c"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais">335</td>
+                            <td>145</td>
+                            <td>43%</td>
+                            <td>100</td>
+                            <td class="peso">10</td>
+                          </tr>
+                          <tr>
+                            <th>FIDELIZAÇÃO PREVIDÊNCIA</th>
+                            <td>
+                              3
+                              <i
+                                class="fas fa-arrow-circle-right"
+                                style="color: #f1b44c"
+                              ></i>
+                            </td>
+                            <td class="valoresAtuais">279</td>
+                            <td>86</td>
+                            <td>30%</td>
+                            <td>80</td>
+                            <td class="peso">10</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end row -->
+              </div>
+              <!-- COOPERATIVA DEFAULT FIM -->
+
+              <!-- COOPERATIVA COMPARADA -->
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="row">
+                    <div class="table-rep-plugin">
+                      <div
+                        class="table-responsive table-bordered mb-0"
+                        data-pattern="priority-columns"
+                      >
+                        <table
+                          id="tech-companies-1"
+                          class=" table-striped table table-editable table-nowrap align-middle table-edits"
+                        >
+                          <thead>
+                            <tr>
+                              <th>EVOLUIR</th>
+                              <th data-priority="1">PROJETADO</th>
+                              <th data-priority="3">CLASS.</th>
+                              <th data-priority="1">EVOL.</th>
+                              <th data-priority="3">TOTAL PTS</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr data-id="1">
+                              <td class="simulador" data-field="ccpfpp" >15</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td class="evolucao"></td>
+                              <td class="pontosSimulados"></td>
+                            </tr>
+                            <tr data-id="2">
+                              <td class="simulador" data-field="ccpipp">15</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td class="evolucao"></td>
+                              <td class="pontosSimulados"></td>
+                            </tr>
+                            <tr data-id="3">
+                              <td class="simulador" data-field="dapfpfpp">15</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td class="evolucao"></td>
+                              <td class="pontosSimulados" ></td>
+                            </tr>
+                            <tr data-id="4">
+                              <td class="simulador" data-field="dapfpjpp">15</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td class="evolucao" ></td>
+                              <td class="pontosSimulados"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="table-rep-plugin">
+                      <div
+                        class="table-responsive table-bordered mb-0"
+                        data-pattern="priority-columns"
+                      >
+                        <table
+                          id="tech-companies-1"
+                          class="table-striped table table-editable table-nowrap align-middle table-edits"
+                        >
+                          <thead>
+                            <tr>
+                              <th style="color:transparent;user-select: none;">EVOLUIR</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">PROJETADO</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">CLASS.</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">EVOL.</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">TOTAL.PTS</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr data-id="5">
+                              <td class="simulador" data-field="spf">15</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td class="evolucao"></td>
+                              <td  class="pontosSimulados"></td>
+                            </tr>
+                         
+                            <tr data-id="6">
+                              <td class="simulador" data-field="spj">15</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td></td>
+                              <td class="pontosSimulados"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    
+                    <div class="table-rep-plugin">
+                      <div
+                        class="table-responsive table-bordered mb-0"
+                        data-pattern="priority-columns"
+                      >
+                        <table
+                          id="tech-companies-1"
+                          class="table-striped table table-editable table-nowrap align-middle table-edits"
+                        >
+                          <thead>
+                            
+                            <tr>
+                              <th style="color:transparent;user-select: none;">EVOLUIR</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">PROJETADO</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">CLASS.</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">EVOL.</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">TOTAL.PTS</th>
+                            </tr>
+                      
+                          </thead>
+                          <tbody>
+                            <tr data-id="7">
+                              <td class="simulador" data-field="rpsrt">15</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td></td>
+                              <td class="pontosSimulados"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="table-rep-plugin">
+                      <div
+                        class="table-striped table table-editable table-nowrap align-middle table-edits"
+                        data-pattern="priority-columns"
+                      >
+                        <table
+                          id="tech-companies-1"
+                          class="table table-striped"
+                        >
+                          <thead>
+                            <tr>
+                              <th style="color:transparent;user-select: none;">EVOLUIR</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">PROJETADO</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">CLASS.</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">EVOL.</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">TOTAL.PTS</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr data-id="8">
+                              <td class="simulador" data-field="rt">115</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td></td>
+                              <td class="pontosSimulados"></td>
+                            </tr>
+                         
+                            <tr data-id="9">
+                              <td class="simulador" data-field="rtv">115</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td></td>
+                              <td class="pontosSimulados"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="table-rep-plugin">
+                      <div
+                        class="table-striped table table-editable table-nowrap align-middle table-edits"
+                        data-pattern="priority-columns"
+                      >
+                        <table
+                          id="tech-companies-1"
+                          class="table-striped table table-editable table-nowrap align-middle table-edits"
+                        >
+                          <thead>
+                            <tr>
+                              <th style="color:transparent;user-select: none;">EVOLUIR</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">PROJETADO</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">CLASS.</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">EVOL.</th>
+                              <th style="color:transparent;user-select: none;" data-priority="1">TOTAL.PTS</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr data-id="10">
+                              <td class="simulador" data-field="">15</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td></td>
+                              <td class="pontosSimulados"></td>
+                            </tr>
+                            <tr data-id="11">
+                              <td class="simulador" data-field="">15</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td></td>
+                              <td class="pontosSimulados"></td>
+                            </tr>
+                            <tr data-id="12">
+                              <td class="simulador" data-field="">15</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td></td>
+                              <td class="pontosSimulados"></td>
+                            </tr>
+                            <tr data-id="13">
+                              <td class="simulador" data-field=""> 15</td>
+                              <td class="projetado"></td>
+                              <td class="classificacaoSimulada"></td>
+                              <td></td>
+                              <td  class="pontosSimulados"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            <!-- COOPERATIVA COMPARADA FIM -->
+
+            <!-- end page content -->
+          </div>
+          <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                © Skote.
+              </div>
+              <div class="col-sm-6">
+                <div class="text-sm-end d-none d-sm-block">
+                  Design & Develop by Themesbrand
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+      <div data-simplebar class="h-100">
+        <div class="rightbar-title d-flex align-items-center px-3 py-4">
+          <h5 class="m-0 me-2">Settings</h5>
+
+          <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+            <i class="mdi mdi-close noti-icon"></i>
+          </a>
+        </div>
+
+        <!-- Settings -->
+        <hr class="mt-0" />
+        <h6 class="text-center mb-0">Choose Layouts</h6>
+
+        <div class="p-4">
+          <div class="mb-2">
+            <img
+              src="assets/images/layouts/layout-1.jpg"
+              class="img-thumbnail"
+              alt="layout images"
+            />
+          </div>
+
+          <div class="form-check form-switch mb-3">
+            <input
+              class="form-check-input theme-choice"
+              type="checkbox"
+              id="light-mode-switch"
+              checked
+            />
+            <label class="form-check-label" for="light-mode-switch"
+              >Light Mode</label
+            >
+          </div>
+
+          <div class="mb-2">
+            <img
+              src="assets/images/layouts/layout-2.jpg"
+              class="img-thumbnail"
+              alt="layout images"
+            />
+          </div>
+          <div class="form-check form-switch mb-3">
+            <input
+              class="form-check-input theme-choice"
+              type="checkbox"
+              id="dark-mode-switch"
+            />
+            <label class="form-check-label" for="dark-mode-switch"
+              >Dark Mode</label
+            >
+          </div>
+
+          <div class="mb-2">
+            <img
+              src="assets/images/layouts/layout-3.jpg"
+              class="img-thumbnail"
+              alt="layout images"
+            />
+          </div>
+          <div class="form-check form-switch mb-3">
+            <input
+              class="form-check-input theme-choice"
+              type="checkbox"
+              id="rtl-mode-switch"
+            />
+            <label class="form-check-label" for="rtl-mode-switch"
+              >RTL Mode</label
+            >
+          </div>
+
+          <div class="mb-2">
+            <img
+              src="assets/images/layouts/layout-4.jpg"
+              class="img-thumbnail"
+              alt="layout images"
+            />
+          </div>
+          <div class="form-check form-switch mb-5">
+            <input
+              class="form-check-input theme-choice"
+              type="checkbox"
+              id="dark-rtl-mode-switch"
+            />
+            <label class="form-check-label" for="dark-rtl-mode-switch"
+              >Dark RTL Mode</label
+            >
+          </div>
+        </div>
+      </div>
+      <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
+    <script src="assets/js/pages/table-editable.int.js"></script> 
+    <script src="assets/js/app.js"></script>
+
+    <script>
+      
+     
+        var formataDinheiro = new Intl.NumberFormat('pt-BR', {
+          style: 'currency',
+          currency: 'BRL',
+          // These options are needed to round to whole numbers if that's what you want.
+          //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
+          //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+      });
+      
+      function editarTabelas(celula){
+        var tipo = ''
+
+        if(celula<=7 || celula>=10){
+
+          tipo = "numero"
+        }
+        else{
+
+          tipo = "ainda nao sei"
+
+
+        }
+
+
+        console.log(celula)
+        console.log(tipo)
+        var stringCelula='[data-id="'+celula+'"] .simulador'
+        var celulaSimulador= document.querySelector(stringCelula)
+        var celulaValorAtual = document.querySelectorAll('.valoresAtuais')
+        
+
+
+        var valorCelulaAtual = parseInt((celulaValorAtual[celula-1].innerHTML).replace(/\./g,"")) 
+        var valorCelula= parseInt(celulaSimulador.innerHTML)
+        var celulaProjetado= document.querySelectorAll('.projetado')[celula-1]
+        
+        celulaProjetado.innerHTML=(formataDinheiro.format(valorCelula+valorCelulaAtual)).replace('R$',"")
+        
+        var classificacao = document.querySelectorAll(".classificacaoSimulada")
+        var peso= document.querySelectorAll(".peso")
+        classificacao[celula-1].innerHTML="1°" 
+        var totalPts = document.querySelectorAll(".pontosSimulados")
+        totalPts[celula-1].innerHTML=(parseInt(peso[celula-1].innerHTML))*10
+
+      }
+
+
+      $("table tr").editable({
+        keyboard: true,
+        dblclick: true,
+        button: true,
+        buttonSelector: ".edit",
+        dropdowns: {},
+        maintainWidth: true,
+        edit: function() {},
+        save: function(values) {editarTabelas($(this).data('id'))},
+        cancel: function(values) {}
+      });
+
+      
+
+    </script>
+
+
+
+  </body>
+</html>
