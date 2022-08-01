@@ -44,7 +44,7 @@ var options = {
         data: [44, 55, 41, 67, 22, 43, 36, 52, 24, 18, 36, 48]
     }],
     xaxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
     },
     colors: ['#556ee6', '#f1b44c', '#34c38f'],
     legend: {
