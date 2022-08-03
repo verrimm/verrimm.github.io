@@ -4747,3 +4747,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 .modalBonus {
   border: 1px solid #556ee6;
 }
+
+.hackTabelaAltura {
+  color: transparent !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
