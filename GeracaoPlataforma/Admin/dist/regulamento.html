@@ -792,609 +792,189 @@
       <!-- ============================================================== -->
       <div class="main-content">
         <div class="page-content">
-          <div class="container-fluid">
+          <div class="col-lg-12">
+            <div class="card ">
+                <div class="card-body">
+                    <div class="p-lg-1">
 
-            <!-- start page title -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0 font-size-18">Simulador</h4>
+                        <div class="d-xl-flex">
 
-                        <div class="page-title-right">
-                            <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">Superação</a></li>
-                                <li class="breadcrumb-item active">Simulador</li>
-                            </ol>
+                            <div class="w-100 container">
+
+                                <h4 class="mt-0 mb-4">CAMPANHA DE SUPERAÇÃO 2022</h4>
+
+                                <div id="desc" class="mb-5">
+                                    <h5 class="mt-4">Sobre a campanha</h5>
+                                    <p>
+                                      A Campanha de Superação Unicred 2022 visa alcançar os objetivos do Planejamento
+                                      Estratégico e motivar as Unidades e Cooperativas em busca do crescimento
+                                      sustentável.
+                                    </p>
+                                </div>
+                                <div id="prerequisites" class="mb-5">
+                                  <h5>PERÍODO DA CAMPANHA:                                  </h5>
+                                  <p>
+                                    Janeiro a dezembro de 2022.
+
+                                  </p>
+                                </div>
+                                <div id="prerequisites" class="mb-5">
+                                  <h5 class="mt-4">PRINCIPAIS OBJETIVOS:</h5>    
+
+                                    <ul>
+                                        <li>
+                                            <p>Apoiar o desenvolvimento de negócios das cooperativas
+                                            </p>
+                                        </li>
+                                        <li>
+                                          <p>Facilitar a Gestão Estratégica;
+                                          </p>
+                                      </li>
+                                      <li>
+                                        <p>Incentivar a troca de experiências entre os colaboradores;
+                                        </p>
+                                    </li>
+                                    <li>
+                                      <p>Acompanhar a evolução do Sistema Unicred RS;
+                                      </p>
+                                  </li>
+                                  <li>
+                                    <p>Fomentar o atingimento dos objetivos do Planejamento Estratégico Estadual.
+                                    </p>
+                                </li>
+                                    </ul>
+
+                                    <p>APROVAÇÃO DO REGULAMENTO: O regulamento da Campanha Superação 2022 foi
+aprovada pelo Conselho de Administração em 14/12/2021, conforme ATA 176.</p>
+
+
+                                </div>
+
+                                <div id="installation">
+                                    <h5 class="mt-4">Installation</h5>
+
+                                    <p>
+                                        To setup the admin theme, follow below-mentioned steps:
+                                    </p>
+
+                                    <ul>
+                                        <li>
+                                            <strong>Install Prerequisites</strong>
+                                            <p>
+                                                Make sure to have all above prerequisites installed
+                                                &amp; running on your computer
+                                            </p>
+                                        </li>
+
+                                    </ul>
+
+
+                                    <p class="mt-4">
+                                        After you finished with the above steps, you can run the
+                                        following commands into the terminal / command prompt from the
+                                        root directory of the project to run the project locally or
+                                        build for
+                                        production use:
+                                    </p>
+                                    <table class="table table-bordered m-0">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 20%;">
+                                                    <i class="ti-file"></i> Command</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <code>yarn install</code>
+                                                </td>
+                                                <td>
+                                                    This would install all the required dependencies in
+                                                    the <code>node_modules</code> folder.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <code>gulp</code>
+                                                </td>
+                                                <td>
+                                                    Runs the project locally, starts the development
+                                                    server and watches for any changes in your code,
+                                                    including your HTML, javascript, sass, etc. The
+                                                    development server is accessible at <a href="http://localhost:3000">http://localhost:3000</a>.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <code>gulp build</code>
+                                                </td>
+                                                <td>
+                                                    Generates a <code>/dist</code> directory with all
+                                                    the production files.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="multi" class="mb-5">
+                                    <h5 class="mt-4">Multi Language Settings</h5>
+                                    <p>Lets add french language.</p>
+                                    <ul>
+                                        <li> Create new file fr.json in the fr folder in the <code>src/assets/lang</code> folder and copy the en.json file code in this file.</li>
+                                        <li>
+                                            Now you need to add the language in the <code>src/assets/js/lang/jquery.multiLanguage.js</code> file. In the function setLanguage add the "else if" condition as below and make sure to add french.jpg file.
+<pre>    else if(lang=='fr') {
+document.getElementById("header-lang-img").src = "assets/images/flags/french.jpg";
+}
+</pre>
+                                        </li>
+                                        <li> You can simply use in the HTML file to convert the language text just add the attribute "key" to the parent div or any HTML tag.
+                                            Example: &lt;div key="t-title"&gt;This is title.&lt;/div&gt;</li>
+                                    </ul>
+                                </div>
+                                <div id="tips">
+                                    <h5 class="mt-4">Tips</h5>
+
+                                    <p>
+                                        SCSS: We suggest you to do not change any scss files from the assets/scss/custom folders because to get new updates will might be break your SCSS changes if any you have made. We strongly suggest you
+                                        to create new custom.scss file and use that instead of overwrite
+                                        any theme's custom scss files.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <!-- Start right-side-nav -->
+                            <div class="d-none d-xl-block">
+                                <div class="right-side-nav">
+                                    <ul class="nav nav-pills flex-column">
+                                        <li class="nav-item">
+                                            <a href="#desc" class="nav-link active">Description</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#prerequisites" class="nav-link">Prerequisites</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#installation" class="nav-link">Installation</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#multi" class="nav-link">Multi Language Settings</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#tips" class="nav-link">Tips</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- End right-side-nav -->
                         </div>
 
-                    </div>
-                </div>
-            </div>
-            <!-- end page title -->
-
-            <!-- start page content -->
-            <div class="row">
-              <p>
-                Selecione uma unidade para compararar resultados.
-              </p>
-            </div>
-
-            <div class="row">
-            <div class="col-6 mb-3">
-                <label class="col-md-2 col-form-label">Unidade:</label>
-                <select class="form-select" disabled>
-                  <option>Minha Unidade</option>
-                </select>
-            </div>
-            <div class="col-6 mb-3">
-              <table>
-
-                <td>SIMULADOR</td>
-            
-              </table>
-              
-          </div>
-              
-               
-            </div>
-
-            <div class="row">
-                 <!-- COOPERATIVA DEFAULT -->
-              <div class="col-lg-6">
-                <div class="row">
-                  <div class="table-rep-plugin">
-                    <div
-                      class="table-responsive table-bordered mb-0"
-                      data-pattern="priority-columns"
-                    >
-                      <table id="tech-companies-1" class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th>Indicadores</th>
-                            <th data-priority="1">Classificação</th>
-                            <th data-priority="3">Carteira</th>
-                            <th data-priority="1">Per Capita</th>
-                            <th data-priority="3">Pontos</th>
-                            <th data-priority="3">Peso</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th>CARTEIRA DE CRÉDITO PF PER CAPITA</th>
-                            <td>
-                              3
-                              <i
-                                class="fas fa-arrow-circle-down"
-                                style="color: #f46a6a"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais">11.223.188</td>
-                            <td >49</td>
-                            <td>120</td>
-                            <td class="peso">15</td>
-                          </tr>
-                          <tr>
-                            <th>CARTEIRA DE CRÉDITO PJ PER CAPITA</th>
-                            <td>
-                              9
-                              <i
-                                class="fas fa-arrow-circle-up"
-                                style="color: #34c38f"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais" >440.733</td>
-                            <td>25</td>
-                            <td>30</td>
-                            <td class="peso">15</td>
-                          </tr>
-                          <tr>
-                            <th>DAP + FUNDOS PF PER CAPITA</th>
-                            <td>
-                              6
-                              <i
-                                class="fas fa-arrow-circle-right"
-                                style="color: #f1b44c"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais">11.540.842</td>
-                            <td>41</td>
-                            <td>150</td>
-                            <td class="peso">30</td>
-                          </tr>
-                          <tr>
-                            <th>DAP + FUNDOS PJ PER CAPITA</th>
-                            <td>
-                              6
-                              <i
-                                class="fas fa-arrow-circle-right"
-                                style="color: #f1b44c"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais">1.597.774</td>
-                            <td>28</td>
-                            <td>150</td>
-                            <td class="peso">30</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <!-- end row -->
-
-                <div class="row">
-                  <div class="table-rep-plugin">
-                    <div
-                      class="table-responsive table-sm table-bordered mb-0"
-                      data-pattern="priority-columns"
-                    >
-                      <table id="tech-companies-2" class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th>Indicadores</th>
-                            <th data-priority="1">Classificação</th>
-                            <th data-priority="3">Unicred</th>
-                            <th data-priority="3">PR</th>
-                            <th data-priority="1">%</th>
-                            <th data-priority="3">Pontos</th>
-                            <th data-priority="3">Peso</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th>STRESS PF</th>
-                            <td>
-                              1
-                              <i
-                                class="fas fa-arrow-circle-up"
-                                style="color: #34c38f"
-                              ></i>
-                            </td>
-                            <td  class="valoresAtuais">7.780.812</td>
-                            <td>2.582.797</td>
-                            <td>75,08%</td>
-                            <td>100</td>
-                            <td class="peso">10</td>
-                          </tr>
-                          <tr>
-                            <th>STRESS PJ</th>
-                            <td>
-                              4
-                              <i
-                                class="fas fa-arrow-circle-right"
-                                style="color: #f1b44c"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais">417.349</td>
-                            <td>573.061</td>
-                            <td>42,14%</td>
-                            <td>70</td>
-                            <td class="peso">10</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <!-- end row -->
-
-                <div class="row">
-                  <div class="table-rep-plugin">
-                    <div
-                      class="table-responsive table-bordered mb-0"
-                      data-pattern="priority-columns"
-                    >
-                      <table id="tech-companies-3" class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th>Indicadores</th>
-                            <th data-priority="1">Classificação</th>
-                            <th data-priority="3">Rec. Prod/Ser</th>
-                            <th data-priority="3">Rec. Total</th>
-                            <th data-priority="1">%</th>
-                            <th data-priority="3">Pontos</th>
-                            <th data-priority="3">Peso</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th>REC. DE PROD E SERV / REC. TOTAL</th>
-                            <td>
-                              2
-                              <i
-                                class="fas fa-arrow-circle-up"
-                                style="color: #34c38f"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais">130.079</td>
-                            <td>1.632.659</td>
-                            <td>8,0%</td>
-                            <td>225</td>
-                            <td class="peso">25</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <!-- end row -->
-
-                <div class="row">
-                  <div class="table-rep-plugin">
-                    <div
-                      class="table-responsive table-bordered mb-0"
-                      data-pattern="priority-columns"
-                    >
-                      <table id="tech-companies-3" class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th>Indicadores</th>
-                            <th data-priority="1">Classificação</th>
-                            <th data-priority="3">Média 2021</th>
-                            <th data-priority="3">Média 2022</th>
-                            <th data-priority="1">% / Vol.</th>
-                            <th data-priority="3">Pontos</th>
-                            <th data-priority="3">Peso</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th>RESULTADO TOTAL %</th>
-                            <td>
-                              9
-                              <i
-                                class="fas fa-arrow-circle-down"
-                                style="color: #f46a6a"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais" >73.980</td>
-                            <td>41.361</td>
-                            <td>-44,09%</td>
-                            <td>0</td>
-                            <td class="peso">20</td>
-                          </tr>
-                          <tr>
-                            <th>RESULTADO TOTAL VOL.</th>
-                            <td>
-                              9
-                              <i
-                                class="fas fa-arrow-circle-down"
-                                style="color: #f46a6a"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais">73.980</td>
-                            <td>41.361</td>
-                            <td>32.620</td>
-                            <td>0</td>
-                            <td class="peso">15</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <!-- end row -->
-
-                <div class="row">
-                  <div class="table-rep-plugin">
-                    <div
-                      class="table-responsive table-bordered mb-0"
-                      data-pattern="priority-columns"
-                    >
-                      <table id="tech-companies-3" class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th>Indicadores</th>
-                            <th data-priority="1">Classificação</th>
-                            <th data-priority="3">Cooperados</th>
-                            <th data-priority="3">Fidelizados</th>
-                            <th data-priority="1">%</th>
-                            <th data-priority="3">Pontos</th>
-                            <th data-priority="3">Peso</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th>FIDELIZAÇÃO PF</th>
-                            <td>
-                              2
-                              <i
-                                class="fas fa-arrow-circle-right"
-                                style="color: #f1b44c"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais">279</td>
-                            <td>148</td>
-                            <td>53%</td>
-                            <td>270</td>
-                            <td class="peso">30</td>
-                          </tr>
-                          <tr>
-                            <th>FIDELIZAÇÃO PJ</th>
-                            <td>
-                              5
-                              <i
-                                class="fas fa-arrow-circle-up"
-                                style="color: #34c38f"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais">56</td>
-                            <td>18</td>
-                            <td>32%</td>
-                            <td>180</td>
-                            <td class="peso">30</td>
-                          </tr>
-                          <tr>
-                            <th>CARTÃO DE CRÉDITO FIDELIZAÇÃO</th>
-                            <td>
-                              1
-                              <i
-                                class="fas fa-arrow-circle-right"
-                                style="color: #f1b44c"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais">335</td>
-                            <td>145</td>
-                            <td>43%</td>
-                            <td>100</td>
-                            <td class="peso">10</td>
-                          </tr>
-                          <tr>
-                            <th>FIDELIZAÇÃO PREVIDÊNCIA</th>
-                            <td>
-                              3
-                              <i
-                                class="fas fa-arrow-circle-right"
-                                style="color: #f1b44c"
-                              ></i>
-                            </td>
-                            <td class="valoresAtuais">279</td>
-                            <td>86</td>
-                            <td>30%</td>
-                            <td>80</td>
-                            <td class="peso">10</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <!-- end row -->
-              </div>
-              <!-- COOPERATIVA DEFAULT FIM -->
-
-              <!-- COOPERATIVA COMPARADA -->
-              <div class="col-lg-6">
-                <div class="card">
-                  <div class="row">
-                    <div class="table-rep-plugin">
-                      <div
-                        class="table-responsive table-bordered mb-0"
-                        data-pattern="priority-columns"
-                      >
-                        <table
-                          id="tech-companies-1"
-                          class=" table-striped table table-editable table-nowrap align-middle table-edits"
-                        >
-                          <thead>
-                            <tr>
-                              <th>EVOLUIR</th>
-                              <th data-priority="1">PROJETADO</th>
-                              <th data-priority="3">CLASS.</th>
-                              <th data-priority="1">EVOL.</th>
-                              <th data-priority="3">TOTAL PTS</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr data-id="1">
-                              <td class="simulador" data-field="ccpfpp" >15</td>
-                              <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td class="evolucao"></td>
-                              <td class="pontosSimulados"></td>
-                            </tr>
-                            <tr data-id="2">
-                              <td class="simulador" data-field="ccpipp">15</td>
-                              <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td class="evolucao"></td>
-                              <td class="pontosSimulados"></td>
-                            </tr>
-                            <tr data-id="3">
-                              <td class="simulador" data-field="dapfpfpp">15</td>
-                              <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td class="evolucao"></td>
-                              <td class="pontosSimulados" ></td>
-                            </tr>
-                            <tr data-id="4">
-                              <td class="simulador" data-field="dapfpjpp">15</td>
-                              <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td class="evolucao" ></td>
-                              <td class="pontosSimulados"></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="table-rep-plugin">
-                      <div
-                        class="table-responsive table-bordered mb-0"
-                        data-pattern="priority-columns"
-                      >
-                        <table
-                          id="tech-companies-1"
-                          class="table-striped table table-editable table-nowrap align-middle table-edits"
-                        >
-                          <thead>
-                            <tr>
-                              <th style="color:transparent;user-select: none;">EVOLUIR</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">PROJETADO</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">CLASS.</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">EVOL.</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">TOTAL.PTS</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr data-id="5">
-                              <td class="simulador" data-field="spf">15</td>
-                              <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td class="evolucao"></td>
-                              <td  class="pontosSimulados"></td>
-                            </tr>
-                         
-                            <tr data-id="6">
-                              <td class="simulador" data-field="spj">15</td>
-                               <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td></td>
-                              <td class="pontosSimulados"></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="table-rep-plugin">
-                      <div
-                        class="table-responsive table-bordered mb-0"
-                        data-pattern="priority-columns"
-                      >
-                        <table
-                          id="tech-companies-1"
-                          class="table-striped table table-editable table-nowrap align-middle table-edits"
-                        >
-                          <thead>
-                            
-                            <tr>
-                              <th style="color:transparent;user-select: none;">EVOLUIR</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">PROJETADO</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">CLASS.</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">EVOL.</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">TOTAL.PTS</th>
-                            </tr>
-                      
-                          </thead>
-                          <tbody>
-                            <tr data-id="7">
-                              <td class="simulador" data-field="rpsrt">15</td>
-                               <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td></td>
-                              <td class="pontosSimulados"></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="table-rep-plugin">
-                      <div
-                        class="table-striped table table-editable table-nowrap align-middle table-edits"
-                        data-pattern="priority-columns"
-                      >
-                        <table
-                          id="tech-companies-1"
-                          class="table table-striped"
-                        >
-                          <thead>
-                            <tr>
-                              <th style="color:transparent;user-select: none;">EVOLUIR</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">PROJETADO</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">CLASS.</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">EVOL.</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">TOTAL.PTS</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr data-id="8">
-                              <td class="simulador" data-field="rt">115</td>
-                               <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td></td>
-                              <td class="pontosSimulados"></td>
-                            </tr>
-                         
-                            <tr data-id="9">
-                              <td class="simulador" data-field="rtv">115</td>
-                               <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td></td>
-                              <td class="pontosSimulados"></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="table-rep-plugin">
-                      <div
-                        class="table-striped table table-editable table-nowrap align-middle table-edits"
-                        data-pattern="priority-columns"
-                      >
-                        <table
-                          id="tech-companies-1"
-                          class="table-striped table table-editable table-nowrap align-middle table-edits"
-                        >
-                          <thead>
-                            <tr>
-                              <th style="color:transparent;user-select: none;">EVOLUIR</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">PROJETADO</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">CLASS.</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">EVOL.</th>
-                              <th style="color:transparent;user-select: none;" data-priority="1">TOTAL.PTS</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr data-id="10">
-                              <td class="simulador" data-field="">15</td>
-                               <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td></td>
-                              <td class="pontosSimulados"></td>
-                            </tr>
-                            <tr data-id="11">
-                              <td class="simulador" data-field="">15</td>
-                               <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td></td>
-                              <td class="pontosSimulados"></td>
-                            </tr>
-                            <tr data-id="12">
-                              <td class="simulador" data-field="">15</td>
-                               <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td></td>
-                              <td class="pontosSimulados"></td>
-                            </tr>
-                            <tr data-id="13">
-                              <td class="simulador" data-field=""> 15</td>
-                               <th class="projetado hackTabelaAltura">tt</th>
-                              <td class="classificacaoSimulada"></td>
-                              <td></td>
-                              <td  class="pontosSimulados"></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                  
-                </div>
-              </div>
-            <!-- COOPERATIVA COMPARADA FIM -->
-
-            <!-- end page content -->
-          </div>
-          <!-- container-fluid -->
+                    </div> <!-- end padding-->
+                </div> <!-- end card-body-->
+            </div> <!-- end card-->
+        </div>
         </div>
         <!-- End Page-content -->
 
