@@ -4731,3 +4731,44 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
           transform: translateY(-50%);
   margin: 0px auto;
 }
+
+.form-check {
+  padding-top: 5px;
+}
+
+.paginaInicial {
+  margin-right: 0 !important;
+}
+
+.bonusIcone {
+  content: url(assets/images/bonus.svg);
+}
+
+.modalBonus {
+  border: 1px solid #556ee6;
+}
+
+.CorVerde {
+  color: #34c38f;
+}
+
+.avatarRanking {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.descritivoInicial {
+  float: left;
+  width: 330px;
+  color: #74788d;
+  opacity: 0.7;
+  margin-top: -15px;
+}
+
+.hackTabelaAltura {
+  color: transparent !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
