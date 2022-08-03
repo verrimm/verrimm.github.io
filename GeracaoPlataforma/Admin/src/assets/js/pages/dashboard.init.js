@@ -12,56 +12,92 @@ setTimeout(function () {
     $('#subscribeModal').modal('show');
 }, 2000);
 
-
-// stacked column chart
-
+//line chart datalabel - Ranking Mensal
+   
 var options = {
     chart: {
-        height: 360,
-        type: 'bar',
-        stacked: true,
-        toolbar: {
-            show: false
-        },
-        zoom: {
-            enabled: true
-        }
-    },
-
-    plotOptions: {
-        bar: {
-            horizontal: false,
-            columnWidth: '15%',
-            endingShape: 'rounded'
-        },
-    },
-
-    dataLabels: {
+      height: 380,
+      type: 'line',
+      zoom: {
         enabled: false
+      },
+      toolbar: {
+        show: false
+      }
+    },
+    colors: ['#556ee6', '#34c38f', '#e83e8c', '#f1b44c'],
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      width: 4,
+      curve: 'smooth'
     },
     series: [{
-        name: 'Minha Unidade',
-        data: [44, 55, 41, 67, 22, 43, 36, 52, 24, 18, 36, 48]
-    }],
+      name: "Capão da Canoa",
+      data: [280, 400, 503, 590, 670, 720, 780, 812]
+    },
+    {
+      name: "Natal",
+      data: [230, 420, 477, 600, 773, 810, 840, 926]
+    },
+    {
+        name: "Caruaru",
+        data: [117, 199, 277, 370, 490, 555, 678, 740]
+    },
+    {
+        name: "Canoas",
+        data: [190, 300, 450, 523, 690, 770, 850, 956]
+    }
+    ],
+    grid: {
+      row: {
+        colors: ['transparent', 'transparent'], // takes an array which will be repeated on columns
+        opacity: 0.2
+      },
+      borderColor: '#f1f1f1'
+    },
+    markers: {
+      style: 'inverted',
+      size: 4,
+    },
     xaxis: {
-        categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+      categories: ['Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro']
     },
-    colors: ['#556ee6', '#f1b44c', '#34c38f'],
+    yaxis: {
+      title: {
+        text: 'Pontos'
+      },
+      min: 0,
+      max: 1000
+    },
     legend: {
-        position: 'bottom',
+      position: 'bottom',
+      horizontalAlign: 'right',
+      floating: false,
+      offsetY: 10
     },
-    fill: {
-        opacity: 1
-    },
-}
+    responsive: [{
+      breakpoint: 600,
+      options: {
+        chart: {
+          toolbar: {
+            show: false
+          }
+        },
+        legend: {
+          show: false
+        },
+      }
+    }]
+  }
 
 var chart = new ApexCharts(
-    document.querySelector("#stacked-column-chart"),
+    document.querySelector("#ranking-mensal"),
     options
 );
 
 chart.render();
-
 
 // Radial chart
 
@@ -71,6 +107,8 @@ var options = {
         type: 'radialBar',
         offsetY: -10
     },
+    series: [67],
+    colors: ["#6f42c1"],
     plotOptions: {
         radialBar: {
             startAngle: -135,
@@ -78,13 +116,11 @@ var options = {
             dataLabels: {
                 name: {
                     fontSize: '13px',
-                    color: undefined,
                     offsetY: 60
                 },
                 value: {
                     offsetY: 22,
                     fontSize: '16px',
-                    color: undefined,
                     formatter: function (val) {
                         return val + "%";
                     }
@@ -92,23 +128,19 @@ var options = {
             }
         }
     },
-    colors: ['#556ee6'],
-    fill: {
-        type: 'gradient',
-        gradient: {
-            shade: 'dark',
-            shadeIntensity: 0.15,
-            inverseColors: false,
-            opacityFrom: 1,
-            opacityTo: 1,
-            stops: [0, 50, 65, 91]
-        },
-    },
     stroke: {
-        dashArray: 4,
+        lineCap: "round"
     },
-    series: [67],
-    labels: ['Series A'],
+    fill: {
+        type: "gradient",
+        gradient: {
+          shade: "dark",
+          type: "vertical",
+          gradientToColors: ["#34c38f"],
+          stops: [0, 100]
+        }
+      },
+    labels: ['Objetivo'],
 
 }
 
