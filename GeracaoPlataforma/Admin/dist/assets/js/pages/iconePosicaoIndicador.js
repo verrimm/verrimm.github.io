@@ -1,0 +1,1 @@
+var posicao=document.querySelectorAll(".iconePosicaoRanking");switch(posicao[0].textContent){case"1º":case"2º":case"3º":posicao[0].classList.add("bg-success");break;default:posicao[0].classList.add("bg-danger")}
