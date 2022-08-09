@@ -4754,8 +4754,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 }
 
 .avatarRanking {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
+}
+
+.avatar-sm {
+  height: 2rem !important;
+  width: 2rem !important;
 }
 
 .descritivoInicial {
