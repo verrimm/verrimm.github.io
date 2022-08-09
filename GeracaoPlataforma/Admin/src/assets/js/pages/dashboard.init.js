@@ -8,9 +8,9 @@ File: Dashboard Init Js File
 
 //  subscribe modal
 
-setTimeout(function () {
-    $('#subscribeModal').modal('show');
-}, 2000);
+// setTimeout(function () {
+//     $('#subscribeModal').modal('show');
+// }, 2000);
 
 //line chart datalabel - Ranking Mensal
    
