@@ -4772,3 +4772,19 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
       -ms-user-select: none;
           user-select: none;
 }
+
+.cardInput {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.card-input-element + .card:hover {
+  cursor: pointer;
+}
+
+.card-input-element:checked + .card {
+  border: 2px solid !important;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+  border-color: #34c38f !important;
+}

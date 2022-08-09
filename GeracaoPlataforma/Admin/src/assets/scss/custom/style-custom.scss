@@ -1,55 +1,71 @@
 //== Cores ==//
-$blue:    #556ee6;
-$indigo:  #564ab1;
-$purple:  #6f42c1;
-$pink:    #e83e8c;
-$red:     #f46a6a;
-$orange:  #f1734f;
-$yellow:  #f1b44c;
-$green:   #34c38f;
-$teal:    #050505;
-$cyan:    #50a5f1;
+$blue: #556ee6;
+$indigo: #564ab1;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #f46a6a;
+$orange: #f1734f;
+$yellow: #f1b44c;
+$green: #34c38f;
+$teal: #050505;
+$cyan: #50a5f1;
 
-.form-check{
+.form-check {
     padding-top: 5px;
 }
 
-.paginaInicial{
+.paginaInicial {
     margin-left: 0 !important;
 }
 
-.bonusIcone{
+.bonusIcone {
     content: url(assets/images/bonus.svg);
 }
 
-.modalBonus{
+.modalBonus {
     border: 1px solid #556ee6;
 }
 
-.CorVerde{
+.CorVerde {
     color: $green;
 }
 
-.avatarRanking{
+.avatarRanking {
     font-size: 20px;
     font-weight: 600;
 }
 
-.descritivoInicial{
-  float: right;
-  width: 330px;
-  color: #74788d;
-  opacity: 0.7;
-  margin-top: -15px;
+.descritivoInicial {
+    float: right;
+    width: 330px;
+    color: #74788d;
+    opacity: 0.7;
+    margin-top: -15px;
 }
 
 //==  Simulador.html  ==//
-.hackTabelaAltura{
+.hackTabelaAltura {
 
     color: transparent !important;
     user-select: none;
 
-  }
+}
 
+//======================//
 
-  
+.cardInput {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.card-input-element+.card:hover {
+    cursor: pointer;
+}
+
+.card-input-element:checked+.card {
+    border: 2px solid !important;
+    -webkit-transition: border .3s;
+    -o-transition: border .3s;
+    transition: border .3s;
+    border-color: #34c38f !important;
+}

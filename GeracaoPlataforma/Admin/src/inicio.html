@@ -1,603 +1,458 @@
 @@include("partials/main.html")
 
-    <head>
-        
-        @@include("partials/title-meta.html", {"title": "Dashboard"})
+<head>
 
-        @@include("partials/head-css.html")
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
 
-    </head>
+    @@include("partials/head-css.html")
 
-    @@include("partials/body.html")
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/libs/@chenfengyuan/datepicker/datepicker.min.css">
 
-        <!-- Begin page -->
-        <div id="layout-wrapper">
+</head>
 
-            @@include("partials/menu.html")
+@@include("partials/body.html")
 
-            <!-- ============================================================== -->
-            <!-- Start right Content here -->
-            <!-- ============================================================== -->
-            <div class="main-content">
+<!-- Begin page -->
+<div id="layout-wrapper">
 
-                <div class="page-content">
-                    <div class="container-fluid">
+    @@include("partials/menu.html")
 
-                        @@include("partials/page-title.html", {"pagetitle": "Superação", "title": "Dashboard"})
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
 
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="row" style="justify-content: flex-end;">
-                                    <div class="col-md-6">
-                                        <div class="card border border-primary mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="badge bg-primary" style="font-size: 100%;">Grupo 2</p>
-                                                        <h4 class="mb-0">Agência Teste</h4>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <p class="badge bg-primary" style="font-size: 100%;">Pontuação <span class="fas fa-trophy"></span></p>
-                                                        <h4 class="mb-0">540</h4>
-                                                        <h5 class="font-size-10 mb-0">/314 pontos do 1º lugar</h5>
-                                                    </div>
-                                                    <div class="flex-shrink-0 align-self-center">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-success avatarRanking">2º</span>
-                                                        </div>
+        <div class="page-content">
+            <div class="container-fluid">
+
+                @@include("partials/page-title.html", {"pagetitle": "Superação", "title": "Dashboard"})
+
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="row" style="justify-content: flex-end;">
+                            <div class="col-md-6">
+                                <label class="cardInput">
+                                    <input type="radio" name="indicador" id="cardAgencia"
+                                        class="card-input-element d-none" checked>
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div class="flex-grow-1">
+                                                    <p class="badge bg-primary" style="font-size: 100%;">Grupo 5</p>
+                                                    <h4 class="mb-0">Unicred Central RS</h4>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <p class="badge bg-primary" style="font-size: 100%;">Pontuação <span
+                                                            class="fas fa-trophy"></span></p>
+                                                    <h4 class="mb-0">677</h4>
+                                                    <h5 class="font-size-10 mb-0">/127 pontos do 3º lugar</h5>
+                                                </div>
+                                                <div class="flex-shrink-0 align-self-center ">
+                                                    <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                        <span
+                                                            class="avatar-title rounded-circle bg-warning avatarRanking">5º</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="card border border-primary mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="badge bg-primary" style="font-size: 100%;">Grupo 5</p>
-                                                        <h4 class="mb-0">Unicred Central RS</h4>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <p class="badge bg-primary" style="font-size: 100%;">Pontuação <span class="fas fa-trophy"></span></p>
-                                                        <h4 class="mb-0">677</h4>
-                                                        <h5 class="font-size-10 mb-0">/127 pontos do 3º lugar</h5>
-                                                    </div>
-                                                    <div class="flex-shrink-0 align-self-center ">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-warning avatarRanking">5º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end row -->
-                                <div class="row" style="justify-content: flex-end;">
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Crédito PF</p>
-                                                        <h4 class="mb-0">R$19.352.171</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-success avatarRanking">1º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Crédito PJ</p>
-                                                        <h4 class="mb-0">R$5.301.170</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center ">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-danger avatarRanking">6º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">DAP + Fundos PF</p>
-                                                        <h4 class="mb-0">52,67%</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-success avatarRanking">1º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">DAP + Fundos PF</p>
-                                                        <h4 class="mb-0">R$14.693.380</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center ">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-warning avatarRanking">4º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end row -->
-
-                                <div class="row" style="justify-content: flex-end;">
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Stress PF</p>
-                                                        <h4 class="mb-0">R$21.003.829</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-success avatarRanking">2º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Stress PJ</p>
-                                                        <h4 class="mb-0">R$3.960.828</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center ">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-danger avatarRanking">7º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Rec. de Prod e Serv / Total</p>
-                                                        <h4 class="mb-0">R$1.678.495</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-danger avatarRanking">9º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Resultado Total %</p>
-                                                        <h4 class="mb-0">52,67%</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-warning avatarRanking">5º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end row -->
-                                
-                                <div class="row" style="justify-content: flex-end;">
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Resultado Total Vol. %</p>
-                                                        <h4 class="mb-0">34,20%</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-success avatarRanking">2º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Fidelização PF %</p>
-                                                        <h4 class="mb-0">33%</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center ">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-danger avatarRanking">6º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Fidelização PJ %</p>
-                                                        <h4 class="mb-0">52,67%</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-danger avatarRanking">7º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="card mini-stats-wid">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="flex-grow-1">
-                                                        <p class="text-muted fw-medium">Crédito Fidelização</p>
-                                                        <h4 class="mb-0">23,36%</h4>
-                                                    </div>
-
-                                                    <div class="flex-shrink-0 align-self-center">
-                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                                            <span class="avatar-title rounded-circle bg-danger avatarRanking">6º</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end row -->                                  
+                                </label>
                             </div>
-                            <!-- end row --> 
-                            @@include("partials/grafico.html")
+                            <div class="col-md-6">
+                                <label class="cardInput">
+                                    <input type="radio" name="indicador" id="cardAgencia"
+                                        class="card-input-element d-none">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div class="flex-grow-1">
+                                                    <p class="badge bg-primary" style="font-size: 100%;">Grupo 5</p>
+                                                    <h4 class="mb-0">Unicred Central RS</h4>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <p class="badge bg-primary" style="font-size: 100%;">Pontuação <span
+                                                            class="fas fa-trophy"></span>
+                                                    </p>
+                                                    <h4 class="mb-0">677</h4>
+                                                    <h5 class="font-size-10 mb-0">/127 pontos do 3º lugar</h5>
+                                                </div>
+                                                <div class="flex-shrink-0 align-self-center ">
+                                                    <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                        <span
+                                                            class="avatar-title rounded-circle bg-warning avatarRanking">5º</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
                         </div>
                         <!-- end row -->
-
-                        <!-- <div class="row">
-                            <div class="col-xl-4">
-                                <div class="card">
+                        <div class="row" style="justify-content: flex-end;">
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
                                     <div class="card-body">
-                                        <h4 class="card-title mb-4">Social Source</h4>
-                                        <div class="text-center">
-                                            <div class="avatar-sm mx-auto mb-4">
-                                                <span class="avatar-title rounded-circle bg-primary bg-soft font-size-24">
-                                                        <i class="mdi mdi-facebook text-primary"></i>
-                                                    </span>
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">Crédito PF</p>
+                                                <h4 class="mb-0">R$19.352.171</h4>
                                             </div>
-                                            <p class="font-16 text-muted mb-2"></p>
-                                            <h5><a href="javascript: void(0);" class="text-dark">Facebook - <span class="text-muted font-16">125 sales</span> </a></h5>
-                                            <p class="text-muted">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus tincidunt.</p>
-                                            <a href="javascript: void(0);" class="text-primary font-16">Learn more <i class="mdi mdi-chevron-right"></i></a>
-                                        </div>
-                                        <div class="row mt-4">
-                                            <div class="col-4">
-                                                <div class="social-source text-center mt-3">
-                                                    <div class="avatar-xs mx-auto mb-3">
-                                                        <span class="avatar-title rounded-circle bg-primary font-size-16">
-                                                                <i class="mdi mdi-facebook text-white"></i>
-                                                            </span>
-                                                    </div>
-                                                    <h5 class="font-size-15">Facebook</h5>
-                                                    <p class="text-muted mb-0">125 sales</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="social-source text-center mt-3">
-                                                    <div class="avatar-xs mx-auto mb-3">
-                                                        <span class="avatar-title rounded-circle bg-info font-size-16">
-                                                                <i class="mdi mdi-twitter text-white"></i>
-                                                            </span>
-                                                    </div>
-                                                    <h5 class="font-size-15">Twitter</h5>
-                                                    <p class="text-muted mb-0">112 sales</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="social-source text-center mt-3">
-                                                    <div class="avatar-xs mx-auto mb-3">
-                                                        <span class="avatar-title rounded-circle bg-pink font-size-16">
-                                                                <i class="mdi mdi-instagram text-white"></i>
-                                                            </span>
-                                                    </div>
-                                                    <h5 class="font-size-15">Instagram</h5>
-                                                    <p class="text-muted mb-0">104 sales</p>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-5">Activity</h4>
-                                        <ul class="verti-timeline list-unstyled">
-                                            <li class="event-list">
-                                                <div class="event-timeline-dot">
-                                                    <i class="bx bx-right-arrow-circle font-size-18"></i>
+                                            <div class="flex-shrink-0 align-self-center">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-success avatarRanking">1º</span>
                                                 </div>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 me-3">
-                                                        <h5 class="font-size-14">22 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <div>
-                                                            Responded to need “Volunteer Activities
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="event-list">
-                                                <div class="event-timeline-dot">
-                                                    <i class="bx bx-right-arrow-circle font-size-18"></i>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 me-3">
-                                                        <h5 class="font-size-14">17 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <div>
-                                                            Everyone realizes why a new common language would be desirable... <a href="javascript: void(0);">Read more</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="event-list active">
-                                                <div class="event-timeline-dot">
-                                                    <i class="bx bxs-right-arrow-circle font-size-18 bx-fade-right"></i>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 me-3">
-                                                        <h5 class="font-size-14">15 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <div>
-                                                            Joined the group “Boardsmanship Forum”
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="event-list">
-                                                <div class="event-timeline-dot">
-                                                    <i class="bx bx-right-arrow-circle font-size-18"></i>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="flex-shrink-0 me-3">
-                                                        <h5 class="font-size-14">12 Nov <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
-                                                    </div>
-                                                    <div class="flex-grow-1">
-                                                        <div>
-                                                            Responded to need “In-Kind Opportunity”
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div class="text-center mt-4"><a href="javascript: void(0);" class="btn btn-primary waves-effect waves-light btn-sm">View More <i class="mdi mdi-arrow-right ms-1"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-4">Top Cities Selling Product</h4>
-
-                                        <div class="text-center">
-                                            <div class="mb-4">
-                                                <i class="bx bx-map-pin text-primary display-4"></i>
                                             </div>
-                                            <h3>1,456</h3>
-                                            <p>San Francisco</p>
-                                        </div>
-
-                                        <div class="table-responsive mt-4">
-                                            <table class="table align-middle table-nowrap">
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="width: 30%">
-                                                            <p class="mb-0">San Francisco</p>
-                                                        </td>
-                                                        <td style="width: 25%">
-                                                            <h5 class="mb-0">1,456</h5></td>
-                                                        <td>
-                                                            <div class="progress bg-transparent progress-sm">
-                                                                <div class="progress-bar bg-primary rounded" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="mb-0">Los Angeles</p>
-                                                        </td>
-                                                        <td>
-                                                            <h5 class="mb-0">1,123</h5>
-                                                        </td>
-                                                        <td>
-                                                            <div class="progress bg-transparent progress-sm">
-                                                                <div class="progress-bar bg-success rounded" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <p class="mb-0">San Diego</p>
-                                                        </td>
-                                                        <td>
-                                                            <h5 class="mb-0">1,026</h5>
-                                                        </td>
-                                                        <td>
-                                                            <div class="progress bg-transparent progress-sm">
-                                                                <div class="progress-bar bg-warning rounded" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-                        <!-- end row -->
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">Crédito PJ</p>
+                                                <h4 class="mb-0">R$5.301.170</h4>
+                                            </div>
 
-                        <div class="col-xl-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-4">Ranking</h4>
-
-                                    <div class="text-center">
-                                        <div class="mb-4">
-                                            <i class="bx bx-trophy bx-tada-hover text-primary display-4"></i>
+                                            <div class="flex-shrink-0 align-self-center ">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-danger avatarRanking">6º</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3>956</h3>
-                                        <h4>Agência Canoas</h4>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">DAP + Fundos PF</p>
+                                                <h4 class="mb-0">52,67%</h4>
+                                            </div>
 
-                                    <div class="table-responsive mt-4">
-                                        <table class="table align-middle table-nowrap">
-                                            <tbody>
-                                                <tr>
-                                                    <td style="width: 30%">
-                                                        <p class="mb-0"><span class="badge bg-success">1º</span> Agência Canoas</p>
-                                                    </td>
-                                                    <td style="width: 25%">
-                                                        <h5 class="mb-0">956</h5></td>
-                                                    <td>
-                                                        <div class="progress bg-transparent progress-sm">
-                                                            <div class="progress-bar bg-success rounded" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p class="mb-0"><span class="badge bg-info">2º</span> Agência Natal</p>
-                                                    </td>
-                                                    <td>
-                                                        <h5 class="mb-0">926</h5>
-                                                    </td>
-                                                    <td>
-                                                        <div class="progress bg-transparent progress-sm">
-                                                            <div class="progress-bar bg-primary rounded" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p class="mb-0"><span class="badge bg-warning">3º</span> Agência Capão da Canoa</p>
-                                                    </td>
-                                                    <td>
-                                                        <h5 class="mb-0">812</h5>
-                                                    </td>
-                                                    <td>
-                                                        <div class="progress bg-transparent progress-sm">
-                                                            <div class="progress-bar bg-warning rounded" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p class="mb-0"><span class="badge bg-danger">4º</span> Agência Caruaru</p>
-                                                    </td>
-                                                    <td>
-                                                        <h5 class="mb-0">740</h5>
-                                                    </td>
-                                                    <td>
-                                                        <div class="progress bg-transparent progress-sm">
-                                                            <div class="progress-bar bg-danger rounded" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                            <div class="flex-shrink-0 align-self-center">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-success avatarRanking">1º</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">DAP + Fundos PF</p>
+                                                <h4 class="mb-0">R$14.693.380</h4>
+                                            </div>
+
+                                            <div class="flex-shrink-0 align-self-center ">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-warning avatarRanking">4º</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- end row -->
 
+                        <div class="row" style="justify-content: flex-end;">
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">Stress PF</p>
+                                                <h4 class="mb-0">R$21.003.829</h4>
+                                            </div>
+
+                                            <div class="flex-shrink-0 align-self-center">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-success avatarRanking">2º</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">Stress PJ</p>
+                                                <h4 class="mb-0">R$3.960.828</h4>
+                                            </div>
+
+                                            <div class="flex-shrink-0 align-self-center ">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-danger avatarRanking">7º</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">Rec. de Prod e Serv / Total</p>
+                                                <h4 class="mb-0">R$1.678.495</h4>
+                                            </div>
+
+                                            <div class="flex-shrink-0 align-self-center">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-danger avatarRanking">9º</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">Resultado Total %</p>
+                                                <h4 class="mb-0">52,67%</h4>
+                                            </div>
+
+                                            <div class="flex-shrink-0 align-self-center">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-warning avatarRanking">5º</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row" style="justify-content: flex-end;">
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">Resultado Total Vol. %</p>
+                                                <h4 class="mb-0">34,20%</h4>
+                                            </div>
+
+                                            <div class="flex-shrink-0 align-self-center">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-success avatarRanking">2º</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">Fidelização PF %</p>
+                                                <h4 class="mb-0">33%</h4>
+                                            </div>
+
+                                            <div class="flex-shrink-0 align-self-center ">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-danger avatarRanking">6º</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">Fidelização PJ %</p>
+                                                <h4 class="mb-0">52,67%</h4>
+                                            </div>
+
+                                            <div class="flex-shrink-0 align-self-center">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-danger avatarRanking">7º</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mini-stats-wid">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium">Crédito Fidelização</p>
+                                                <h4 class="mb-0">23,36%</h4>
+                                            </div>
+
+                                            <div class="flex-shrink-0 align-self-center">
+                                                <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                    <span
+                                                        class="avatar-title rounded-circle bg-danger avatarRanking">6º</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
                     </div>
-                    <!-- container-fluid -->
+                    <!-- end row -->
+                    @@include("partials/grafico.html")
                 </div>
-                <!-- End Page-content -->
+                <!-- end row -->
 
-                <!-- subscribeModal -->
-                @@include("partials/modal.html")
-                <!-- end modal -->
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Ranking</h4>
 
-                @@include("partials/footer.html")
+                            <div class="text-center">
+                                <div class="mb-4">
+                                    <i class="bx bx-trophy bx-tada-hover text-primary display-4"></i>
+                                </div>
+                                <h3>956</h3>
+                                <h4>Agência Canoas</h4>
+                            </div>
+
+                            <div class="table-responsive mt-4">
+                                <table class="table align-middle table-nowrap">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 30%">
+                                                <p class="mb-0"><span class="badge bg-success">1º</span> Agência Canoas
+                                                </p>
+                                            </td>
+                                            <td style="width: 25%">
+                                                <h5 class="mb-0">956</h5>
+                                            </td>
+                                            <td>
+                                                <div class="progress bg-transparent progress-sm">
+                                                    <div class="progress-bar bg-success rounded" role="progressbar"
+                                                        style="width: 94%" aria-valuenow="94" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0"><span class="badge bg-info">2º</span> Agência Natal</p>
+                                            </td>
+                                            <td>
+                                                <h5 class="mb-0">926</h5>
+                                            </td>
+                                            <td>
+                                                <div class="progress bg-transparent progress-sm">
+                                                    <div class="progress-bar bg-primary rounded" role="progressbar"
+                                                        style="width: 89%" aria-valuenow="89" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0"><span class="badge bg-warning">3º</span> Agência Capão
+                                                    da Canoa</p>
+                                            </td>
+                                            <td>
+                                                <h5 class="mb-0">812</h5>
+                                            </td>
+                                            <td>
+                                                <div class="progress bg-transparent progress-sm">
+                                                    <div class="progress-bar bg-warning rounded" role="progressbar"
+                                                        style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0"><span class="badge bg-danger">4º</span> Agência Caruaru
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <h5 class="mb-0">740</h5>
+                                            </td>
+                                            <td>
+                                                <div class="progress bg-transparent progress-sm">
+                                                    <div class="progress-bar bg-danger rounded" role="progressbar"
+                                                        style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <!-- end main content-->
-
+            <!-- container-fluid -->
         </div>
-        <!-- END layout-wrapper -->
+        <!-- End Page-content -->
 
-        @@include("partials/right-sidebar.html")
+        <!-- subscribeModal -->
+        <!-- @@include("partials/modal.html") -->
+        <!-- end modal -->
 
-        @@include("partials/vendor-scripts.html")
+        @@include("partials/footer.html")
+    </div>
+    <!-- end main content-->
 
-        <!-- apexcharts -->
-        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+</div>
+<!-- END layout-wrapper -->
 
-        <!-- dashboard init -->
-        <script src="assets/js/pages/dashboard.init.js"></script>
+@@include("partials/right-sidebar.html")
 
-        <!-- App js -->
-        <script src="assets/js/app.js"></script>
-    </body>
+@@include("partials/vendor-scripts.html")
+
+<!-- apexcharts -->
+<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+<!-- dashboard init -->
+<script src="assets/js/pages/dashboard.init.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+</body>
 
 </html>

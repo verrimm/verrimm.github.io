@@ -1,0 +1,1 @@
+$(document).ready(function(){$("button.plus").on("click",function(){var o=$("#cardPrototype").clone(!0);$(o).css("display","block").removeAttr("id"),$("#newCardHolder").append(o)}),$("body").on("click",".card",function(){$(this).find("form").show()})});
