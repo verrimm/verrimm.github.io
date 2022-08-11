@@ -10,6 +10,26 @@ $green: #34c38f;
 $teal: #050505;
 $cyan: #50a5f1;
 
+.pink {
+    color: $pink;
+}
+
+.success {
+    color: $green;
+}
+
+.primary {
+    color: $teal;
+}
+
+.danger {
+    color: $red;
+}
+
+.warning {
+    color: $yellow;
+}
+
 .form-check {
     padding-top: 5px;
 }
@@ -119,4 +139,8 @@ $cyan: #50a5f1;
 .separador::after {
     content: "|";
     opacity: 0.5;
+}
+
+.card-footer {
+    padding: .625rem 1.25rem !important;
 }

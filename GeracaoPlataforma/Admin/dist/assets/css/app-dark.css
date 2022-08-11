@@ -4733,6 +4733,26 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   margin: 0px auto;
 }
 
+.pink {
+  color: #e83e8c;
+}
+
+.success {
+  color: #34c38f;
+}
+
+.primary {
+  color: #050505;
+}
+
+.danger {
+  color: #f46a6a;
+}
+
+.warning {
+  color: #f1b44c;
+}
+
 .form-check {
   padding-top: 5px;
 }
@@ -4848,6 +4868,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 .separador::after {
   content: "|";
   opacity: 0.5;
+}
+
+.card-footer {
+  padding: 0.625rem 1.25rem !important;
 }
 
 #contain-all {
