@@ -86,3 +86,37 @@ $cyan: #50a5f1;
 .selectFiltros {
     border: 1px solid #ced4da !important;
 }
+
+//== Carousel Ranking Colors ==//
+.first {
+    color: #ecc81a;
+}
+
+.second {
+    color: #4e606b;
+}
+
+.third {
+    color: #f1734f;
+}
+
+.carousel-align {
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.carousel-item {
+    transition: none !important;
+    display: none !important;
+}
+
+.carousel-item.active {
+    display: block !important;
+}
+
+.separador::after {
+    content: "|";
+    opacity: 0.5;
+}
