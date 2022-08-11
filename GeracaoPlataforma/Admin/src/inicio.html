@@ -13,8 +13,6 @@
     <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="assets/libs/@chenfengyuan/datepicker/datepicker.min.css">
 
-    <script src="assets/js/pages/datepicker-ptbr.js"></script>
-
 </head>
 
 @@include("partials/body.html")
@@ -34,57 +32,66 @@
 
                 @@include("partials/page-title.html", {"pagetitle": "Superação", "title": "Dashboard"})
 
+                <!-- <div class="row">
+                    <div class="col-xl-12">
+                        <p class="badge bg-dark">Filtros <i class='bx bx-caret-down'></i></p>
+                    </div>
+                </div> -->
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="row" style="justify-content: flex-end;">
                             <div class="col-md-6">
-                                <form action="">
-                                    <div class="mb-3">
-                                        <select class="form-control select2">
-                                            <option>Filtro</option>
-                                            <optgroup label="Grupo 0">
-                                                <option value="AK">Agência 1</option>
-                                                <option value="HI">Agência 2</option>
-                                            </optgroup>
-                                            <optgroup label="Grupo 1">
-                                                <option value="CA">Agência 3</option>
-                                                <option value="NV">Agência 4</option>
-                                                <option value="OR">Agência 5</option>
-                                                <option value="WA">Agência 6</option>
-                                            </optgroup>
-                                            <optgroup label="Grupo 2">
-                                                <option value="AZ">Agência 7</option>
-                                                <option value="CO">Agência 8</option>
-                                                <option value="ID">Agência 9</option>
-                                                <option value="MT">Agência 10</option>
-                                                <option value="NE">Agência 11</option>
-                                            </optgroup>
-                                            <optgroup label="Grupo 3">
-                                                <option value="AL">Agência 12</option>
-                                                <option value="AR">Agência 13</option>
-                                                <option value="IL">Agência 14</option>
-                                                <option value="IA">Agência 15</option>
-                                                <option value="KS">Agência 16</option>
-                                            </optgroup>
-                                            <optgroup label="Grupo 4">
-                                                <option value="CT">Agência 17</option>
-                                                <option value="DE">Agência 18</option>
-                                                <option value="FL">Agência 19</option>
-                                                <option value="GA">Agência 20</option>
-                                                <option value="IN">Agência 21</option>
-                                                <option value="ME">Agência 22</option>
-                                                <option value="MD">Agência 23</option>
-                                            </optgroup>
-                                        </select>
+                                <div class="card border border-primary mini-stats-wid">
+                                    <div class="card-body">
+                                        <form action="">
+                                            <div class="mb-2">
+                                                <select class="form-control select2 selectFiltros">
+                                                    <option>Selecione</option>
+                                                    <optgroup label="Grupo 0">
+                                                        <option value="AK">Agência 1</option>
+                                                        <option value="HI">Agência 2</option>
+                                                    </optgroup>
+                                                    <optgroup label="Grupo 1">
+                                                        <option value="CA">Agência 3</option>
+                                                        <option value="NV">Agência 4</option>
+                                                        <option value="OR">Agência 5</option>
+                                                        <option value="WA">Agência 6</option>
+                                                    </optgroup>
+                                                    <optgroup label="Grupo 2">
+                                                        <option value="AZ">Agência 7</option>
+                                                        <option value="CO">Agência 8</option>
+                                                        <option value="ID">Agência 9</option>
+                                                        <option value="MT">Agência 10</option>
+                                                        <option value="NE">Agência 11</option>
+                                                    </optgroup>
+                                                    <optgroup label="Grupo 3">
+                                                        <option value="AL">Agência 12</option>
+                                                        <option value="AR">Agência 13</option>
+                                                        <option value="IL">Agência 14</option>
+                                                        <option value="IA">Agência 15</option>
+                                                        <option value="KS">Agência 16</option>
+                                                    </optgroup>
+                                                    <optgroup label="Grupo 4">
+                                                        <option value="CT">Agência 17</option>
+                                                        <option value="DE">Agência 18</option>
+                                                        <option value="FL">Agência 19</option>
+                                                        <option value="GA">Agência 20</option>
+                                                        <option value="IN">Agência 21</option>
+                                                        <option value="ME">Agência 22</option>
+                                                        <option value="MD">Agência 23</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                            <div class="input-group" id="datepicker4">
+                                                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                <input type="text" class="form-control"
+                                                    data-date-container='#datepicker4' data-provide="datepicker"
+                                                    data-date-format="MM yyyy" data-date-min-view-mode="1"
+                                                    placeholder="Período">
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="mb-3">
-                                        <div class="position-relative" id="datepicker4">
-                                            <input type="text" class="form-control" data-date-container='#datepicker4'
-                                                data-provide="datepicker" data-date-format="MM yyyy"
-                                                data-date-min-view-mode="1" data-date-autoclose="true">
-                                        </div>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="card border border-primary mini-stats-wid">
@@ -427,94 +434,13 @@
                     @@include("partials/grafico.html")
                 </div>
                 <!-- end row -->
-            </div>
-            <!-- end row -->
+                <div class="row">
 
-            <div class="col-xl-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title mb-4">Ranking</h4>
-                        <div class="text-center">
-                            <div class="mb-4">
-                                <i class="bx bx-trophy bx-tada-hover text-primary display-4"></i>
-                            </div>
-                            <h3>956</h3>
-                            <h4>Agência Canoas</h4>
-                        </div>
+                    @@include("partials/ranking.html")
 
-                        <div class="table-responsive mt-4">
-                            <table class="table align-middle table-nowrap">
-                                <tbody>
-                                    <tr>
-                                        <td style="width: 30%">
-                                            <p class="mb-0"><span class="badge bg-success">1º</span> Agência Canoas
-                                            </p>
-                                        </td>
-                                        <td style="width: 25%">
-                                            <h5 class="mb-0">956</h5>
-                                        </td>
-                                        <td>
-                                            <div class="progress bg-transparent progress-sm">
-                                                <div class="progress-bar bg-success rounded" role="progressbar"
-                                                    style="width: 94%" aria-valuenow="94" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p class="mb-0"><span class="badge bg-info">2º</span> Agência Natal</p>
-                                        </td>
-                                        <td>
-                                            <h5 class="mb-0">926</h5>
-                                        </td>
-                                        <td>
-                                            <div class="progress bg-transparent progress-sm">
-                                                <div class="progress-bar bg-primary rounded" role="progressbar"
-                                                    style="width: 89%" aria-valuenow="89" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p class="mb-0"><span class="badge bg-warning">3º</span> Agência Capão
-                                                da Canoa</p>
-                                        </td>
-                                        <td>
-                                            <h5 class="mb-0">812</h5>
-                                        </td>
-                                        <td>
-                                            <div class="progress bg-transparent progress-sm">
-                                                <div class="progress-bar bg-warning rounded" role="progressbar"
-                                                    style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p class="mb-0"><span class="badge bg-danger">4º</span> Agência Caruaru
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <h5 class="mb-0">740</h5>
-                                        </td>
-                                        <td>
-                                            <div class="progress bg-transparent progress-sm">
-                                                <div class="progress-bar bg-danger rounded" role="progressbar"
-                                                    style="width: 60%" aria-valuenow="60" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
                 </div>
             </div>
-
+            <!-- end row -->
         </div>
         <!-- container-fluid -->
     </div>
@@ -548,6 +474,7 @@
 
 <!-- dashboard init -->
 <script src="assets/js/pages/dashboard.init.js"></script>
+
 <!-- form advanced init -->
 <script src="assets/js/pages/form-advanced.init.js"></script>
 

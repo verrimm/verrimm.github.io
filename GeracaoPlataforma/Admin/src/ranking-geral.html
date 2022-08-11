@@ -1,0 +1,60 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    @@include("partials/head-css.html")
+
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/libs/@chenfengyuan/datepicker/datepicker.min.css">
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    @@include("partials/menu.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                @@include("partials/page-title.html", {"pagetitle": "Superação", "title": "Ranking Geral"})
+
+                @@include("partials/ranking.html")
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <!-- subscribeModal -->
+        @@include("partials/modal.html")
+        <!-- end modal -->
+
+        @@include("partials/footer.html")
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+@@include("partials/right-sidebar.html")
+
+@@include("partials/vendor-scripts.html")
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+</body>
+
+</html>
