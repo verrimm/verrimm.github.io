@@ -148,6 +148,19 @@ $cyan: #50a5f1;
 
 .progress {
     background-color: #b9b9b970 !important;
+    overflow: unset;
+}
+
+.fogueteBar {
+    margin-top: -9px;
+    margin-left: -125px;
+    z-index: 1000;
+    height: 30px;
+    transform: rotate(45deg) !important;
+}
+
+.progress-bar {
+    align-items: flex-end !important;
 }
 
 .progress-icon-end {
@@ -176,7 +189,7 @@ $cyan: #50a5f1;
     font-weight: 400;
     height: 75%;
     justify-content: center;
-    width: 100%;
+    width: 75%;
     border-radius: 5px 5px 5px 5px;
 }
 
