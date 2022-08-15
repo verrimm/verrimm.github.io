@@ -4874,6 +4874,72 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   padding: 0.625rem 1.25rem !important;
 }
 
+.progress {
+  background-color: #b9b9b970 !important;
+}
+
+.progress-icon-end {
+  position: absolute;
+  top: -7px;
+  right: -9px;
+  border-radius: 15px 50px 30px 5px !important;
+}
+
+.progress-icon-start {
+  position: absolute;
+  top: -7px;
+  border-radius: 15px 50px 30px 5px !important;
+}
+
+.rounded-bar {
+  border-radius: 15px 50px 50px 15px;
+}
+
+.avatar-title-card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #34c38f;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  height: 75%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.avatar-title.start {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f1b44c;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  height: 75%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 75%;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.titleProgressBar {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 #contain-all {
   width: 100%;
   overflow: hidden;
@@ -5237,7 +5303,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
     width: 3.5em;
     height: 3.5em;
   }
-}ete {
+}te {
     width: 3.5em;
     height: 3.5em;
   }

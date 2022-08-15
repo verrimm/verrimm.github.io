@@ -57,6 +57,10 @@ const paths = {
       dir:    './src',
       files:  './src/**/*.html',
     },
+    php:   {
+      dir:    './src',
+      files:  './src/**/*.php',
+    },
     img:    {
       dir:    './src/assets/images',
       files:  './src/assets/images/**/*',

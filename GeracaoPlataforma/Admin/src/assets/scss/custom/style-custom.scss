@@ -144,3 +144,55 @@ $cyan: #50a5f1;
 .card-footer {
     padding: .625rem 1.25rem !important;
 }
+
+
+.progress {
+    background-color: #b9b9b970 !important;
+}
+
+.progress-icon-end {
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    border-radius: 15px 50px 30px 5px !important;
+}
+
+.progress-icon-start {
+    position: absolute;
+    top: -7px;
+    border-radius: 15px 50px 30px 5px !important;
+}
+
+
+.rounded-bar {
+    border-radius: 15px 50px 50px 15px;
+}
+
+.avatar-title-card {
+    align-items: center;
+    background-color: $success;
+    color: $white;
+    display: flex;
+    font-weight: 400;
+    height: 75%;
+    justify-content: center;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.avatar-title.start {
+    align-items: center;
+    background-color: $yellow;
+    color: $white;
+    display: flex;
+    font-weight: $fw-medium;
+    height: 75%;
+    justify-content: center;
+    width: 75%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.titleProgressBar {
+    justify-content: center;
+    align-items: flex-end;
+}
