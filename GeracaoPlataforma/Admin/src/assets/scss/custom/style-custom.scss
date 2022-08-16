@@ -145,10 +145,10 @@ $cyan: #50a5f1;
     padding: .625rem 1.25rem !important;
 }
 
-
 .progress {
     background-color: #b9b9b970 !important;
     overflow: unset;
+    display: -webkit-box;
 }
 
 .fogueteBar {
@@ -208,4 +208,16 @@ $cyan: #50a5f1;
 .titleProgressBar {
     justify-content: center;
     align-items: flex-end;
+}
+
+.card-footer {
+    background-color: rgba(0, 0, 0, .07) !important;
+}
+
+.carousel-align h6 {
+    margin-bottom: 0;
+}
+
+.pontosInicio {
+    font-size: 1rem;
 }
