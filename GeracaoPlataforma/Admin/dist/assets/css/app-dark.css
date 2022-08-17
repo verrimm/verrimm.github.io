@@ -4969,6 +4969,22 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   font-size: 1rem;
 }
 
+.sobreIndicador:after {
+  content: "";
+  background-color: #556ee6;
+  opacity: 0.2;
+  position: absolute;
+  width: 2px;
+  height: 151px;
+  top: 28px;
+  left: 100%;
+  display: block;
+}
+
+mark {
+  background-color: #e3effc !important;
+}
+
 #contain-all {
   width: 100%;
   overflow: hidden;

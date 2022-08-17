@@ -221,3 +221,19 @@ $cyan: #50a5f1;
 .pontosInicio {
     font-size: 1rem;
 }
+
+.sobreIndicador:after {
+    content: "";
+    background-color: $blue;
+    opacity: 0.2;
+    position: absolute;
+    width: 2px;
+    height: 151px;
+    top: 28px;
+    left: 100%;
+    display: block
+}
+
+mark {
+    background-color: #e3effc !important;
+}

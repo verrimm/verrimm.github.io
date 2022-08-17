@@ -731,20 +731,34 @@
             <!-- end page title -->
             <div class="row" style="justify-content: flex-end;">
               <div class="col">
-                 <div class="card mini-stats-wid">
+                 <div class="card border border-primary mini-stats-wid">
                      <div class="card-body">
                          <div class="d-flex">
                              <div class="flex-grow-1">
-                                 <p class="text-muted fw-medium">Credito PF</p>
-                                 <h4 class="mb-0">R$19.352.171</h4>
+                                 <p class="badge bg-primary" style="font-size: 100%;"><span class="bx bx-map-pin"></span> Indicador</p>
+                                 <h5 class="mb-0">Credito PF</h5>
+                             </div>
+                             <div class="flex-grow-1">
+                                 <p class="badge bg-primary" style="font-size: 100%;"><span class="bx bx-map-pin"></span> Pontos</p>
+                                 <h5 class="mb-0">@@qtdPontos</h5>
                              </div>
 
                              <div class="flex-shrink-0 align-self-center">
                                  <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
-                                     <span class="avatar-title rounded-circle  avatarRanking iconePosicaoRanking">1º</span>
+                                     <span
+                                         class="avatar-title rounded-circle avatarRanking iconePosicaoRanking">1º</span>
                                  </div>
                              </div>
                          </div>
+                     </div>
+                     <div class="card-footer">
+                         <div class="carousel-align mt-2 mb-1">
+                             <h6>Pontos referentes ao indicador</h6>
+                             <h5>@@percentualIndicador <span class="separador primary"></span>
+                                 <i class="bx bxs-upvote success"></i> @@ptsIndicador
+                             </h5>
+                         </div>
+
                      </div>
                  </div>
               </div>
