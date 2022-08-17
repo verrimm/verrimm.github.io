@@ -17,20 +17,3 @@ switch (posicao[0].textContent) {
         break;
 
 }
-
-//Função para esconder card de regra na página do indicador
-function hideShow() {
-    var card = document.getElementById("cardRegrasCalculo");
-    var texto = document.getElementById("textoDescricao");
-    var icone = document.getElementById("iconDescricao");
-
-    if (card.style.display === "none") {
-        card.style.display = "block";
-        texto.innerHTML = "Esconder Descrição";
-        icone.classList.replace("bx-show", "bx-hide")
-    } else {
-        card.style.display = "none";
-        texto.innerHTML = "Mostrar Descrição";
-        icone.classList.replace("bx-hide", "bx-show");
-    }
-}

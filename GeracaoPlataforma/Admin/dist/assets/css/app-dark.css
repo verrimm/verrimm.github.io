@@ -4985,6 +4985,30 @@ mark {
   background-color: #e3effc !important;
 }
 
+#cardRegrasCalculo {
+  border-radius: 0px 0px 0.25rem 0.25rem !important;
+}
+
+.expand {
+  border-radius: 0.25rem 0.25rem 0px 0px !important;
+  -webkit-transition: width 0.1s;
+  transition: width 0.1s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  width: 100%;
+}
+
+.shrink {
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  width: 10%;
+}
+.shrink #cardRegrasCalculo {
+  border-radius: 0.25rem !important;
+}
+
 #contain-all {
   width: 100%;
   overflow: hidden;
@@ -5345,6 +5369,10 @@ mark {
 
 @media (min-width: 33em) {
   .page-leaderboard .ranking .ranking-table-data:nth-child(3) .complete {
+    width: 3.5em;
+    height: 3.5em;
+  }
+}mplete {
     width: 3.5em;
     height: 3.5em;
   }

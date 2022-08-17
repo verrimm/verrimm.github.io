@@ -222,6 +222,7 @@ $cyan: #50a5f1;
     font-size: 1rem;
 }
 
+// Separador vertical do card
 .sobreIndicador:after {
     content: "";
     background-color: $blue;
@@ -236,4 +237,25 @@ $cyan: #50a5f1;
 
 mark {
     background-color: #e3effc !important;
+}
+
+#cardRegrasCalculo {
+    border-radius: 0px 0px 0.25rem 0.25rem !important;
+}
+
+.expand {
+    border-radius: 0.25rem 0.25rem 0px 0px !important;
+    transition: width .1s;
+    transition-timing-function: ease;
+    width: 100%;
+}
+
+.shrink {
+    transition: width .5s;
+    transition-timing-function: ease;
+    width: 10%;
+
+    #cardRegrasCalculo {
+        border-radius: 0.25rem !important;
+    }
 }

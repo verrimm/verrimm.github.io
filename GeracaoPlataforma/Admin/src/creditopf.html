@@ -21,10 +21,10 @@
         @@include("partials/page-title.html", {"pagetitle": "Superação", "title": "Crédito PF"})
         <div class="col-xl-12">
           <div class="row mx-0 my-0" style="justify-content: flex-end;">
-
             <button onclick="hideShow()" type="button"
-              class="btn btn-primary btn-sm waves-effect btn-label waves-light"><i class="bx bx-hide label-icon"
-                id="iconDescricao"></i><span id="textoDescricao"> Esconder Descrição</span></button>
+              class="expand btn btn-primary btn-sm waves-effect waves-light px-2" id="botaoDescricao"><i
+                class="fas fa-angle-down" id="iconDescricao"></i> <span id="textoDescricao">Esconder
+                Descrição</span></button>
           </div>
         </div>
 
@@ -36,12 +36,13 @@
                   <div class="flex-grow-1">
                     <p class="badge bg-primary" style="font-size: 100%;"><span class="bx bx-notepad"></span> Sobre
                     </p>
-                    <p class="mb-0">O indicador será medido por meio do valor per capita da carteira de
+                    <p class="mb-1">O indicador será medido por meio do valor per capita da carteira de
                       crédito, onde o cálculo será executado dividindo-se a carteira de crédito total PF da
                       cooperativa/unidade (fechamento mês) pela quantidade total de cooperados
-                      que possuírem operações de crédito vigentes na Unicred e/ou mercado (SFN). <mark>Não serão
+                      que possuírem operações de crédito vigentes na Unicred e/ou mercado (SFN).</p>
+                    <p class="mb-1"><strong>Não serão
                         consideradas as modalidades limite de cartão de crédito não utilizado
-                        (1901) e limite de cheque especial não utilizado (1902).</mark></p>
+                        (1901) e limite de cheque especial não utilizado (1902).</strong></p>
                   </div>
                 </div>
               </div>
@@ -148,21 +149,17 @@
 
 @@include("partials/vendor-scripts.html")
 
-<!-- JAVASCRIPT -->
-<script src="assets/libs/jquery/jquery.min.js"></script>
-<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/libs/metismenu/metisMenu.min.js"></script>
-<script src="assets/libs/simplebar/simplebar.min.js"></script>
-<script src="assets/libs/node-waves/waves.min.js"></script>
-<script src="assets/libs/table-edits/build/table-edits.min.js"></script>
-<script src="assets/js/pages/table-editable.int.js"></script>
-<script src="assets/js/app.js"></script>
-
-<script src="assets/js/pages/iconePosicaoIndicador.js"></script>
-
+<!-- apexcharts -->
 <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+<!-- indicador -->
 <script src="assets/js/pages/indicador.js"></script>
 
+<!-- Define cor posição -->
+<script src="assets/js/pages/iconePosicaoIndicador.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
 
 </body>
 
