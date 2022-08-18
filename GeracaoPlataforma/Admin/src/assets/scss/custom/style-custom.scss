@@ -9,6 +9,7 @@ $yellow: #f1b44c;
 $green: #34c38f;
 $teal: #050505;
 $cyan: #50a5f1;
+//== Cores ==//
 
 .pink {
     color: $pink;
@@ -120,6 +121,8 @@ $cyan: #50a5f1;
     color: #f1734f;
 }
 
+//== Carousel Ranking Colors End ==//
+
 .carousel-align {
     display: flex !important;
     justify-content: space-evenly;
@@ -175,7 +178,6 @@ $cyan: #50a5f1;
     top: -7px;
     border-radius: 15px 50px 30px 5px !important;
 }
-
 
 .rounded-bar {
     border-radius: 15px 50px 50px 15px;
@@ -266,4 +268,13 @@ mark {
 
 .shrink:hover {
     color: #fff;
+}
+
+.mini-stats-wid {
+    box-shadow: inset 0px 0px 0px .3px $blue;
+}
+
+.indicadorCard .mini-stats-wid:hover {
+    box-shadow: inset 0px 0px 0px 1px $blue;
+    transition: box-shadow .5s;
 }

@@ -5017,6 +5017,20 @@ mark {
   color: #fff;
 }
 
+.mini-stats-wid {
+  -webkit-box-shadow: inset 0px 0px 0px 0.3px #556ee6;
+          box-shadow: inset 0px 0px 0px 0.3px #556ee6;
+}
+
+.indicadorCard .mini-stats-wid:hover {
+  -webkit-box-shadow: inset 0px 0px 0px 1px #556ee6;
+          box-shadow: inset 0px 0px 0px 1px #556ee6;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
 #contain-all {
   width: 100%;
   overflow: hidden;
