@@ -9,91 +9,57 @@ File: Dashboard Init Js File
 //  subscribe modal
 
 
-//line chart datalabel - Ranking Mensal 
+//line chart datalabel - Ranking Mensal
 var options = {
+    series: [{
+        name: 'Volume (R$)',
+        type: 'column',
+        data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+    }, {
+        name: 'Posição',
+        type: 'line',
+        data: [5, 1, 2, 2, 3, 4, 1, 1, 2, 3, 5, 5]
+    }],
+    colors: ['#34c38f', '#556ee6'],
     chart: {
-        height: 360,
-        type: "bar",
-        stacked: !0,
-        toolbar: {
-            show: !1
-        },
-        zoom: {
-            enabled: !0
-        }
+        height: 300,
+        type: 'line',
+        opposite: true,
     },
-    plotOptions: {
-        bar: {
-            horizontal: !1,
-            columnWidth: "15%",
-            endingShape: "rounded"
-        }
+    colors: ['#34c38f', '#556ee6', '#fff'],
+    stroke: {
+        curve: 'smooth',
+        width: [0, 4]
+    },
+    title: {
+        text: 'Pontos'
     },
     dataLabels: {
-        enabled: !1
+        style: {
+            colors: ['#fff']
+        },
+        enabled: true,
+        enabledOnSeries: [1]
     },
-    series: [{
-        name: "Pontuação",
-        data: [44, 55, 41, 67, 22, 43, 36, 52, 24, 18, 36, 48]
-    },],
+    labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dezembro'],
     xaxis: {
-        categories: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
+        type: 'date'
     },
-    colors: ["#556ee6", "#f1b44c", "#34c38f"],
-    legend: {
-        position: "bottom"
-    },
-    fill: {
-        opacity: 1
-    }
-},
-    chart = new ApexCharts(document.querySelector("#ranking-mensal"), options);
-chart.render();
-options = {
-    chart: {
-        height: 200,
-        type: "radialBar",
-        offsetY: -10
-    },
-    plotOptions: {
-        radialBar: {
-            startAngle: -135,
-            endAngle: 135,
-            dataLabels: {
-                name: {
-                    fontSize: "13px",
-                    color: void 0,
-                    offsetY: 60
-                },
-                value: {
-                    offsetY: 22,
-                    fontSize: "16px",
-                    color: void 0,
-                    formatter: function (e) {
-                        return e + "%"
-                    }
-                }
-            }
+    yaxis: [{
+        title: {
+            text: 'Volume (R$)',
         }
-    },
-    colors: ["#556ee6"],
-    fill: {
-        type: "gradient",
-        gradient: {
-            shade: "dark",
-            shadeIntensity: .15,
-            inverseColors: !1,
-            opacityFrom: 1,
-            opacityTo: 1,
-            stops: [0, 50, 65, 91]
+    }, {
+        reversed: true,
+        opposite: true,
+        title: {
+            text: 'Posição',
         }
-    },
-    stroke: {
-        dashArray: 4
-    },
-    series: [67],
-    labels: ["Series A"]
+    }]
 };
+
+var chart = new ApexCharts(document.querySelector("#ranking-mensal"), options);
+chart.render();
 
 //Função para esconder card de regra na página do indicador
 function hideShow() {
