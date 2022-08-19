@@ -6,9 +6,6 @@ Contact: themesbrand@gmail.com
 File: Dashboard Init Js File
 */
 
-//  subscribe modal
-
-
 //line chart datalabel - Ranking Mensal
 var options = {
     series: [{
@@ -20,13 +17,12 @@ var options = {
         type: 'line',
         data: [5, 1, 2, 2, 3, 4, 1, 1, 2, 3, 5, 5]
     }],
-    colors: ['#34c38f', '#556ee6'],
     chart: {
         height: 300,
         type: 'line',
-        opposite: true,
+        opposite: true
     },
-    colors: ['#34c38f', '#556ee6', '#fff'],
+    colors: ['#556ee6', '#34c38f'],
     stroke: {
         curve: 'smooth',
         width: [0, 4]
@@ -36,12 +32,12 @@ var options = {
     },
     dataLabels: {
         style: {
-            colors: ['#fff']
+            colors: ['#34c38f']
         },
         enabled: true,
         enabledOnSeries: [1]
     },
-    labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dezembro'],
+    labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
     xaxis: {
         type: 'date'
     },
@@ -68,15 +64,16 @@ function hideShow() {
     var texto = document.getElementById("textoDescricao");
     var icone = document.getElementById("iconDescricao");
 
-    if (card.style.display === "none") {
-        card.style.display = "block";
-        texto.innerHTML = "Esconder Descrição";
-        icone.classList.replace("fa-angle-right", "fa-angle-down")
-        botao.classList.replace("shrink", "expand");
-    } else {
+    if (card.style.display === "block") {
         card.style.display = "none";
-        texto.innerHTML = "Ver Mais";
+        texto.innerHTML = "Ver regras do Indicador";
         icone.classList.replace("fa-angle-down", "fa-angle-right");
         botao.classList.replace("expand", "shrink");
+
+    } else {
+        card.style.display = "block";
+        texto.innerHTML = "Esconder regras do Indicador";
+        icone.classList.replace("fa-angle-right", "fa-angle-down")
+        botao.classList.replace("shrink", "expand");
     }
 }

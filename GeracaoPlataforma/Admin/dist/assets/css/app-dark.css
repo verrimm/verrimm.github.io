@@ -4964,6 +4964,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   margin-bottom: 0;
 }
 
+.linkCarousel {
+  color: #495057;
+}
+
+.linkCarousel:hover {
+  color: #495057;
+}
+
 .pontosInicio {
   font-size: 1rem;
 }
@@ -4986,6 +4994,7 @@ mark {
 
 #cardRegrasCalculo {
   border-radius: 0px 0px 0.25rem 0.25rem !important;
+  display: none;
 }
 
 .expand {
@@ -4995,17 +5004,27 @@ mark {
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.07) !important;
+  background-color: #556ee6 !important;
+  color: #fff;
+}
+
+.expand:hover {
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  background-color: #50a5f1 !important;
+  color: #fff;
 }
 
 .shrink {
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
+  -webkit-transition: width 1s;
+  transition: width 1s;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
-  width: 10%;
+  width: 20%;
   background-color: #556ee6 !important;
   color: #fff;
 }
@@ -5014,6 +5033,11 @@ mark {
 }
 
 .shrink:hover {
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  background-color: #50a5f1 !important;
   color: #fff;
 }
 
@@ -5029,6 +5053,22 @@ mark {
   transition: -webkit-box-shadow 0.5s;
   transition: box-shadow 0.5s;
   transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.apex-charts text {
+  fill: #fff;
+}
+
+.apexcharts-text.apexcharts-yaxis-label {
+  fill: #adb5bd;
+}
+
+.apexcharts-text.apexcharts-yaxis-title-text {
+  fill: #adb5bd !important;
+}
+
+.apex-charts text tspan {
+  fill: #adb5bd !important;
 }
 
 #contain-all {
@@ -5292,7 +5332,7 @@ mark {
   }
 }
 .page-leaderboard .ranking .ranking-table-row-leader-1 {
-  border: solid 0.125em #ecc81a;
+  border: solid 0.225em #ecc81a;
 }
 
 .page-leaderboard .ranking .ranking-table-row-leader-1 .ranking-table-data-leader-1 .medal-gold {
@@ -5301,7 +5341,7 @@ mark {
 }
 
 .page-leaderboard .ranking .ranking-table-row-leader-2 {
-  border: solid 0.125em #dbe2e8;
+  border: solid 0.225em #dbe2e8;
 }
 
 .page-leaderboard .ranking .ranking-table-row-leader-2 .ranking-table-data-leader-2 .medal-silver {
@@ -5310,7 +5350,7 @@ mark {
 }
 
 .page-leaderboard .ranking .ranking-table-row-leader-3 {
-  border: solid 0.125em #dfdfd1;
+  border: solid 0.225em #f1734f;
 }
 
 .page-leaderboard .ranking .ranking-table-row-leader-3 .ranking-table-data-leader-3 .medal-bronze {
